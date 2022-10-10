@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: udagram-frontend
+  labels:
+    app: udagram-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: udagram-frontend
+  template:
+    metadata:
+      labels:
+        app: udagram-frontend
+    spec:
+      containers:
+        - name: udagram-frontend
+          image: ifani/udagram-frontend:v2
+          ports:
+            - containerPort: 80
+          env:
+            - name: POSTGRES_USERNAME
+              value: postgres
+            - name: POSTGRES_PASSWORD
+              value: postgres
+            - name: POSTGRES_HOST
+              value: postgres.cdortfk9dtk0.us-east-1.rds.amazonaws.com
+            - name: POSTGRES_DB
+              value: postgres
+            - name: AWS_BUCKET
+              value: udagram-308078610002-prod
+            - name: AWS_ACCESS_KEY_ID
+              value: AKIAUPOXKQZJANQXA4OZ
+            - name: AWS_SECRET_ACCESS_KEY
+              value: 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
+            - name: AWS_REGION
+              value: us-east-1
+            - name: AWS_PROFILE
+              value: default
+            - name: JWT_SECRET
+              value: testing
+            - name: URL
+              value: http://localhost:8100

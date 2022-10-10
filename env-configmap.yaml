@@ -1,0 +1,10 @@
+kind: ConfigMap
+metadata:
+  name: my-configmap
+data:
+  POSTGRES_HOST: postgres.cdortfk9dtk0.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: postgres
+  AWS_BUCKET: udagram-308078610002-prod
+  AWS_REGION: us-east-1
+  AWS_PROFILE: default
+  URL: http://localhost:8100
