@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: udagram-reverseproxy
-          image: ifani/udagram-reverseproxy:v1
+          image: ifani/udagram-reverseproxy:v3
           ports:
             - containerPort: 80
           env:
@@ -25,15 +25,15 @@ spec:
             - name: POSTGRES_PASSWORD
               value: postgres
             - name: POSTGRES_HOST
-              value: postgres.cdortfk9dtk0.us-east-1.rds.amazonaws.com
+              value: postgres.c5zbdc2f7mt1.us-east-1.rds.amazonaws.com
             - name: POSTGRES_DB
               value: postgres
             - name: AWS_BUCKET
-              value: udagram-308078610002-prod
+              value: udagram-406042793940-prod
             - name: AWS_ACCESS_KEY_ID
-              value: AKIAUPOXKQZJANQXA4OZ
+              value: AKIAV5CQJK7KBGRANYHR
             - name: AWS_SECRET_ACCESS_KEY
-              value: 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
+              value: LOWTaYEqAeGy0MpeQNJYUVKFe8gVMoUtaV+12eW3
             - name: AWS_REGION
               value: us-east-1
             - name: AWS_PROFILE
