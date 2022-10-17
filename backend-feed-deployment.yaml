@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend-feed
-          image: ifani/udagram-api-feed:v3
+          image: ifani/udagram-api-feed:v4
           ports:
             - containerPort: 80
           env:

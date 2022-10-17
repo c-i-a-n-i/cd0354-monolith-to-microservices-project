@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: udagram-reverseproxy
-          image: ifani/udagram-reverseproxy:v3
+          image: ifani/udagram-reverseproxy:v4
           ports:
             - containerPort: 80
           env:
