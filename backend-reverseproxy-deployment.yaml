@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
         - name: udagram-reverseproxy
-          image: ifani/udagram-reverseproxy:v4
+          image: ifani/udagram-reverseproxy:v4a
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           env:
             - name: POSTGRES_USERNAME
               value: postgres

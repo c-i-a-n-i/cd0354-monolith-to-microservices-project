@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
         - name: backend-user
-          image: ifani/udagram-api-user:v4
+          image: ifani/udagram-api-user:v4a
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           env:
             - name: POSTGRES_USERNAME
               value: postgres
